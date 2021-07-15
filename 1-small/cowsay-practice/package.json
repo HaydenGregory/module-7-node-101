@@ -1,0 +1,14 @@
+{
+  "name": "cowsay-practice",
+  "version": "1.0.0",
+  "description": "Practice with cowsay module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hayden Gregory",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0"
+  }
+}
