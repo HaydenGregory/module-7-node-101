@@ -1,23 +1,21 @@
 const cowsay = require('cowsay')
 
 console.log(cowsay.say({
-    text: 'Hello cow'
+    text: "I have started your server!"
 }))
 
 
-// const http = require("http");
+const http = require("http");
 
-// const hostname = "127.0.0.1";
-// const port = 3000;
+const hostname = "127.0.0.1";
+const port = 3000;
 
-// const server = http.createServer((req, res) => {
-//     res.statusCode = 200;
-//     res.setHeader("Content-Type", "text/plain");
-//     res.end('Hello There world');
-// });
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/plain");
+    res.end('Hello there world');
+});
 
-// server.listen(port, hostname, () => {
-//     console.log(`Server running at http://${hostname}:${port}/`);
-// });
-
-// console.log('hello world, im in node')
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
